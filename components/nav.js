@@ -31,7 +31,7 @@ export default () => (
           <span className='icon' dangerouslySetInnerHTML={{__html: link.icon}} />
         </a>
       </div>
-      )
+    )
     }
     <style jsx>
       {`

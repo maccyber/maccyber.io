@@ -1,7 +1,7 @@
 import posts from '../posts'
 const md = require('markdown-it')()
 
-export default ({id}) => (
+export default ({ id }) => (
   <div>
     {posts.map(post =>
       <div key={post.slug} className='post'>

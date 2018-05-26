@@ -7,8 +7,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy": "next build && next export && now --public --static out/ --name maccyber.io && now alias",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "deploy": "next build && next export && now --public --static out/ --name maccyber.io && now alias"
   },
   "repository": {
     "type": "git",
@@ -29,13 +29,13 @@
   },
   "homepage": "https://github.com/maccyber/maccyber.io#readme",
   "dependencies": {
-    "markdown-it": "^8.4.0",
-    "next": "^4.0.3",
-    "octicons": "^6.0.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "markdown-it": "8.4.1",
+    "next": "6.0.3",
+    "octicons": "7.3.0",
+    "react": "16.4.0",
+    "react-dom": "16.4.0"
   },
   "now": {
-    "alias": "maccyber.now.sh"
+    "alias": "maccyber.io"
   }
 }

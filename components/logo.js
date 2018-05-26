@@ -1,17 +1,20 @@
-import React from 'react'
+import { Component } from 'react'
 
-export default class extends React.Component {
+export default class extends Component {
   constructor (props) {
     super(props)
     this.state = {}
     this.onMouseMove = this.onMouseMove.bind(this)
   }
+
   componentDidMount () {
     document.addEventListener('mousemove', this.onMouseMove)
   }
+
   componentWillUnmount () {
     document.removeEventListener('mousemove', this.onMouseMove)
   }
+
   onMouseMove (e) {
     const slowDownX = 20
     const centerOfScreenX = window.innerWidth / 2
@@ -19,6 +22,7 @@ export default class extends React.Component {
     const shiftX = (mouseX - centerOfScreenX) / slowDownX
     this.setState({ shiftX })
   }
+
   render () {
     return (
       <div>
